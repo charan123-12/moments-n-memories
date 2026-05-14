@@ -1,6 +1,6 @@
 import admin from "firebase-admin";
 
-const privateKey = process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n");
+const privateKey = process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n');
 
 if (!admin.apps.length) {
   admin.initializeApp({
